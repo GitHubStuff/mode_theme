@@ -6,6 +6,8 @@ import 'mode_color.dart';
 class ModeDefiniation {
   static ModeColor buttonModeColor = ModeColor(light: Colors.lightBlue, dark: Colors.deepPurple);
 
+  static ModeColor dialogModeColor = ModeColor(light: Colors.green, dark: Colors.red);
+
   /// Color pair for primaryColor in a theme
   static ModeColor primaryModeColor = ModeColor(light: Colors.green, dark: Colors.grey);
 
@@ -60,6 +62,7 @@ class ModeDefiniation {
       brightness: isBright ? Brightness.light : Brightness.dark,
       buttonTheme: isBright ? _buttonStyleBright : _buttonStyleDark,
       buttonColor: isBright ? buttonModeColor.light : buttonModeColor.dark,
+      dialogBackgroundColor: isBright ? dialogModeColor.light : dialogModeColor.dark,
       floatingActionButtonTheme:
           FloatingActionButtonThemeData(backgroundColor: isBright ? buttonModeColor.light : buttonModeColor.dark),
       iconTheme: IconThemeData(color: isBright ? iconColors.light : iconColors.dark),
