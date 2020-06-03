@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import '../mode_theme.dart';
 import 'mode_color.dart';
 
-
 class ModeDefiniation {
   static ModeColor buttonModeColor = ModeColor(light: Colors.lightBlue, dark: Colors.deepPurple);
 
@@ -137,7 +136,11 @@ class ModeDefiniation {
         .copyWith(fontFamily: textFontFamily, fontSize: textSizeMap[TextSizes.body2], fontWeight: FontWeight.bold),
     bodyText2:
         _kTypography.white.bodyText2.copyWith(fontFamily: textFontFamily, fontSize: textSizeMap[TextSizes.body1]),
-    caption: _kTypography.white.caption.copyWith(fontFamily: textFontFamily, fontSize: textSizeMap[TextSizes.caption]),
+    caption: _kTypography.white.caption.copyWith(
+      fontFamily: textFontFamily,
+      fontSize: textSizeMap[TextSizes.caption],
+      color: Colors.green,
+    ),
     button: _kTypography.white.button.copyWith(
       fontFamily: textFontFamily,
       fontSize: textSizeMap[TextSizes.button],
@@ -168,7 +171,11 @@ class ModeDefiniation {
         .copyWith(fontFamily: textFontFamily, fontSize: textSizeMap[TextSizes.body2], fontWeight: FontWeight.bold),
     bodyText2:
         _kTypography.black.bodyText2.copyWith(fontFamily: textFontFamily, fontSize: textSizeMap[TextSizes.body1]),
-    caption: _kTypography.black.caption.copyWith(fontFamily: textFontFamily, fontSize: textSizeMap[TextSizes.caption]),
+    caption: _kTypography.black.caption.copyWith(
+      fontFamily: textFontFamily,
+      fontSize: textSizeMap[TextSizes.caption],
+      color: Colors.red,
+    ),
     button: _kTypography.black.button.copyWith(
       fontFamily: textFontFamily,
       fontSize: textSizeMap[TextSizes.button],
