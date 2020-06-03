@@ -3,10 +3,13 @@ import 'package:flutter/material.dart';
 import '../mode_theme.dart';
 import 'mode_color.dart';
 
+const Color Gainsboro = const Color(0xffdcdcdc);
+const Color DimGrey = const Color(0xff808080);
+
 class ModeDefiniation {
   static ModeColor buttonModeColor = ModeColor(light: Colors.lightBlue, dark: Colors.deepPurple);
 
-  static ModeColor dialogModeColor = ModeColor(light: Colors.green, dark: Colors.red);
+  static ModeColor dialogModeColor = ModeColor(light: Gainsboro, dark: DimGrey);
 
   /// Color pair for primaryColor in a theme
   static ModeColor primaryModeColor = ModeColor(light: Colors.green, dark: Colors.grey);
