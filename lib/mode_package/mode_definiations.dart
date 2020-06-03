@@ -67,7 +67,7 @@ class ModeDefiniation {
       primaryColor: isBright ? primaryModeColor.light : primaryModeColor.dark,
       primaryIconTheme: isBright ? _iconThemeDataBright() : _iconThemeDataDark(),
       scaffoldBackgroundColor: isBright ? scaffoldColors.light : scaffoldColors.dark,
-      textTheme: isBright ? _kTextThemeBlack : _kTextThemeWhite,
+      textTheme: isBright ? _kTextThemeWhite : _kTextThemeBlack, // : _kTextThemeWhite,
     );
   }
 
