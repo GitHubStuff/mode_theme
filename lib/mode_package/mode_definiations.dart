@@ -9,7 +9,7 @@ const Color DimGrey = const Color(0xff808080);
 class ModeDefiniation {
   static ModeColor buttonModeColor = ModeColor(light: Colors.lightBlue, dark: Colors.deepPurple);
 
-  static ModeColor dialogModeColor = ModeColor(light: Gainsboro, dark: DimGrey);
+  static ModeColor dialogModeColor = ModeColor(light: Gainsboro, dark: Colors.deepPurple);
 
   /// Color pair for primaryColor in a theme
   static ModeColor primaryModeColor = ModeColor(light: Colors.green, dark: Colors.grey);
