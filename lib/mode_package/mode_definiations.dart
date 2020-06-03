@@ -116,72 +116,138 @@ class ModeDefiniation {
   static ModeColor disabledColors = ModeColor(light: Colors.grey, dark: Colors.blueGrey);
 
   static final TextTheme _kTextThemeWhite = _kTypography.white.copyWith(
-    headline1: _kTypography.white.headline1
-        .copyWith(fontFamily: displayFontFamily, fontSize: textSizeMap[TextSizes.headline1]),
-    headline2: _kTypography.white.headline2
-        .copyWith(fontFamily: displayFontFamily, fontSize: textSizeMap[TextSizes.headline2]),
-    headline3: _kTypography.white.headline3
-        .copyWith(fontFamily: displayFontFamily, fontSize: textSizeMap[TextSizes.headline3]),
-    headline4: _kTypography.white.headline4
-        .copyWith(fontFamily: displayFontFamily, fontSize: textSizeMap[TextSizes.headline4]),
-    headline5: _kTypography.white.headline5
-        .copyWith(fontFamily: displayFontFamily, fontSize: textSizeMap[TextSizes.headline5]),
-    headline6: _kTypography.white.headline6
-        .copyWith(fontFamily: displayFontFamily, fontSize: textSizeMap[TextSizes.headline6]),
-    subtitle2:
-        _kTypography.white.subtitle2.copyWith(fontFamily: textFontFamily, fontSize: textSizeMap[TextSizes.subtitle2]),
-    subtitle1:
-        _kTypography.white.subtitle1.copyWith(fontFamily: textFontFamily, fontSize: textSizeMap[TextSizes.subtitle1]),
-    bodyText1: _kTypography.white.bodyText1
-        .copyWith(fontFamily: textFontFamily, fontSize: textSizeMap[TextSizes.body2], fontWeight: FontWeight.bold),
-    bodyText2:
-        _kTypography.white.bodyText2.copyWith(fontFamily: textFontFamily, fontSize: textSizeMap[TextSizes.body1]),
+    headline1: _kTypography.white.headline1.copyWith(
+      fontFamily: displayFontFamily,
+      fontSize: textSizeMap[TextKeys.headline1],
+      color: textColorLightMode[TextKeys.headline1],
+    ),
+    headline2: _kTypography.white.headline2.copyWith(
+      fontFamily: displayFontFamily,
+      fontSize: textSizeMap[TextKeys.headline2],
+      color: textColorLightMode[TextKeys.headline2],
+    ),
+    headline3: _kTypography.white.headline3.copyWith(
+      fontFamily: displayFontFamily,
+      fontSize: textSizeMap[TextKeys.headline3],
+      color: textColorLightMode[TextKeys.headline3],
+    ),
+    headline4: _kTypography.white.headline4.copyWith(
+      fontFamily: displayFontFamily,
+      fontSize: textSizeMap[TextKeys.headline4],
+      color: textColorLightMode[TextKeys.headline4],
+    ),
+    headline5: _kTypography.white.headline5.copyWith(
+      fontFamily: displayFontFamily,
+      fontSize: textSizeMap[TextKeys.headline5],
+      color: textColorLightMode[TextKeys.headline5],
+    ),
+    headline6: _kTypography.white.headline6.copyWith(
+      fontFamily: displayFontFamily,
+      fontSize: textSizeMap[TextKeys.headline6],
+      color: textColorLightMode[TextKeys.headline6],
+    ),
+    subtitle1: _kTypography.white.subtitle1.copyWith(
+      fontFamily: displayFontFamily,
+      fontSize: textSizeMap[TextKeys.subtitle1],
+      color: textColorLightMode[TextKeys.subtitle1],
+    ),
+    subtitle2: _kTypography.white.subtitle2.copyWith(
+      fontFamily: displayFontFamily,
+      fontSize: textSizeMap[TextKeys.subtitle2],
+      color: textColorLightMode[TextKeys.subtitle2],
+    ),
+    bodyText1: _kTypography.white.bodyText1.copyWith(
+      fontFamily: displayFontFamily,
+      fontSize: textSizeMap[TextKeys.bodyText1],
+      color: textColorLightMode[TextKeys.bodyText1],
+    ),
+    bodyText2: _kTypography.white.bodyText2.copyWith(
+      fontFamily: displayFontFamily,
+      fontSize: textSizeMap[TextKeys.bodyText2],
+      color: textColorLightMode[TextKeys.bodyText2],
+    ),
     caption: _kTypography.white.caption.copyWith(
-      fontFamily: textFontFamily,
-      fontSize: textSizeMap[TextSizes.caption],
-      color: Colors.green,
+      fontFamily: displayFontFamily,
+      fontSize: textSizeMap[TextKeys.caption],
+      color: textColorLightMode[TextKeys.caption],
     ),
     button: _kTypography.white.button.copyWith(
-      fontFamily: textFontFamily,
-      fontSize: textSizeMap[TextSizes.button],
-      color: buttonModeColor.light,
+      fontFamily: displayFontFamily,
+      fontSize: textSizeMap[TextKeys.button],
+      color: textColorLightMode[TextKeys.button],
     ),
-    overline:
-        _kTypography.white.overline.copyWith(fontFamily: textFontFamily, fontSize: textSizeMap[TextSizes.overline]),
+    overline: _kTypography.white.overline.copyWith(
+      fontFamily: displayFontFamily,
+      fontSize: textSizeMap[TextKeys.overline],
+      color: textColorLightMode[TextKeys.overline],
+    ),
   );
 
   static final TextTheme _kTextThemeBlack = _kTypography.black.copyWith(
-    headline1: _kTypography.black.headline1
-        .copyWith(fontFamily: displayFontFamily, fontSize: textSizeMap[TextSizes.headline1]),
-    headline2: _kTypography.black.headline2
-        .copyWith(fontFamily: displayFontFamily, fontSize: textSizeMap[TextSizes.headline2]),
-    headline3: _kTypography.black.headline3
-        .copyWith(fontFamily: displayFontFamily, fontSize: textSizeMap[TextSizes.headline3]),
-    headline4: _kTypography.black.headline4
-        .copyWith(fontFamily: displayFontFamily, fontSize: textSizeMap[TextSizes.headline4]),
-    headline5: _kTypography.black.headline5
-        .copyWith(fontFamily: displayFontFamily, fontSize: textSizeMap[TextSizes.headline5]),
-    headline6: _kTypography.black.headline6
-        .copyWith(fontFamily: displayFontFamily, fontSize: textSizeMap[TextSizes.headline6]),
-    subtitle2:
-        _kTypography.black.subtitle2.copyWith(fontFamily: textFontFamily, fontSize: textSizeMap[TextSizes.subtitle2]),
-    subtitle1:
-        _kTypography.black.subtitle1.copyWith(fontFamily: textFontFamily, fontSize: textSizeMap[TextSizes.subtitle1]),
-    bodyText1: _kTypography.black.bodyText1
-        .copyWith(fontFamily: textFontFamily, fontSize: textSizeMap[TextSizes.body2], fontWeight: FontWeight.bold),
-    bodyText2:
-        _kTypography.black.bodyText2.copyWith(fontFamily: textFontFamily, fontSize: textSizeMap[TextSizes.body1]),
+    headline1: _kTypography.black.headline1.copyWith(
+      fontFamily: displayFontFamily,
+      fontSize: textSizeMap[TextKeys.headline1],
+      color: textColorDarkMode[TextKeys.headline1],
+    ),
+    headline2: _kTypography.black.headline2.copyWith(
+      fontFamily: displayFontFamily,
+      fontSize: textSizeMap[TextKeys.headline2],
+      color: textColorDarkMode[TextKeys.headline2],
+    ),
+    headline3: _kTypography.black.headline3.copyWith(
+      fontFamily: displayFontFamily,
+      fontSize: textSizeMap[TextKeys.headline3],
+      color: textColorDarkMode[TextKeys.headline3],
+    ),
+    headline4: _kTypography.black.headline4.copyWith(
+      fontFamily: displayFontFamily,
+      fontSize: textSizeMap[TextKeys.headline4],
+      color: textColorDarkMode[TextKeys.headline4],
+    ),
+    headline5: _kTypography.black.headline5.copyWith(
+      fontFamily: displayFontFamily,
+      fontSize: textSizeMap[TextKeys.headline5],
+      color: textColorDarkMode[TextKeys.headline5],
+    ),
+    headline6: _kTypography.black.headline6.copyWith(
+      fontFamily: displayFontFamily,
+      fontSize: textSizeMap[TextKeys.headline6],
+      color: textColorDarkMode[TextKeys.headline6],
+    ),
+    subtitle1: _kTypography.black.subtitle1.copyWith(
+      fontFamily: displayFontFamily,
+      fontSize: textSizeMap[TextKeys.subtitle1],
+      color: textColorDarkMode[TextKeys.subtitle1],
+    ),
+    subtitle2: _kTypography.black.subtitle2.copyWith(
+      fontFamily: displayFontFamily,
+      fontSize: textSizeMap[TextKeys.subtitle2],
+      color: textColorDarkMode[TextKeys.subtitle2],
+    ),
+    bodyText1: _kTypography.black.bodyText1.copyWith(
+      fontFamily: displayFontFamily,
+      fontSize: textSizeMap[TextKeys.bodyText1],
+      color: textColorDarkMode[TextKeys.bodyText1],
+    ),
+    bodyText2: _kTypography.black.bodyText2.copyWith(
+      fontFamily: displayFontFamily,
+      fontSize: textSizeMap[TextKeys.bodyText2],
+      color: textColorDarkMode[TextKeys.bodyText2],
+    ),
     caption: _kTypography.black.caption.copyWith(
-      fontFamily: textFontFamily,
-      fontSize: textSizeMap[TextSizes.caption],
-      color: Colors.red,
+      fontFamily: displayFontFamily,
+      fontSize: textSizeMap[TextKeys.caption],
+      color: textColorDarkMode[TextKeys.caption],
     ),
     button: _kTypography.black.button.copyWith(
-      fontFamily: textFontFamily,
-      fontSize: textSizeMap[TextSizes.button],
-      color: buttonModeColor.dark,
+      fontFamily: displayFontFamily,
+      fontSize: textSizeMap[TextKeys.button],
+      color: textColorDarkMode[TextKeys.button],
     ),
-    overline:
-        _kTypography.black.overline.copyWith(fontFamily: textFontFamily, fontSize: textSizeMap[TextSizes.overline]),
+    overline: _kTypography.black.overline.copyWith(
+      fontFamily: displayFontFamily,
+      fontSize: textSizeMap[TextKeys.overline],
+      color: textColorDarkMode[TextKeys.overline],
+    ),
   );
 }
