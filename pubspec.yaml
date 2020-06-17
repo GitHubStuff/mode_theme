@@ -1,8 +1,8 @@
 name: mode_theme
 description: Flutter Package to handle light/dark themes
-version: 0.2.0+5
+version: 0.2.0+6
 author: Steven Smith
-homepage: https://www.icodeforyou.com
+homepage: https://github.com/GitHubStuff/mode_theme.git
 
 environment:
   sdk: ">=2.7.0 <3.0.0"

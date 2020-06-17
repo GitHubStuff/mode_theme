@@ -65,6 +65,7 @@ class ModeDefiniation {
       brightness: isBright ? Brightness.light : Brightness.dark,
       buttonTheme: isBright ? _buttonStyleBright : _buttonStyleDark,
       buttonColor: isBright ? buttonModeColor.light : buttonModeColor.dark,
+      cardColor: isBright ? DimGrey : Colors.black87,
       dialogBackgroundColor: isBright ? dialogModeColor.light : dialogModeColor.dark,
       floatingActionButtonTheme:
           FloatingActionButtonThemeData(backgroundColor: isBright ? buttonModeColor.light : buttonModeColor.dark),
