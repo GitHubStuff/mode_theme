@@ -9,6 +9,8 @@ const Color DimGrey = const Color(0xff808080);
 class ModeDefiniation {
   static ModeColor buttonModeColor = ModeColor(light: Colors.lightBlue, dark: Colors.deepPurple);
 
+  static ModeColor cardColor = ModeColor(light: Colors.lightBlue[400], dark: Colors.black87);
+
   static ModeColor dialogModeColor = ModeColor(light: Gainsboro, dark: Colors.deepPurple);
 
   /// Color pair for primaryColor in a theme
@@ -65,7 +67,7 @@ class ModeDefiniation {
       brightness: isBright ? Brightness.light : Brightness.dark,
       buttonTheme: isBright ? _buttonStyleBright : _buttonStyleDark,
       buttonColor: isBright ? buttonModeColor.light : buttonModeColor.dark,
-      cardColor: isBright ? DimGrey : Colors.black87,
+      cardColor: isBright ? cardColor.light : cardColor.dark,
       dialogBackgroundColor: isBright ? dialogModeColor.light : dialogModeColor.dark,
       floatingActionButtonTheme:
           FloatingActionButtonThemeData(backgroundColor: isBright ? buttonModeColor.light : buttonModeColor.dark),
