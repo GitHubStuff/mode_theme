@@ -73,7 +73,7 @@ class ModeThemeState extends State<ModeTheme> {
   @override
   void initState() {
     super.initState();
-    Log.t('{mode_theme.dart} init');
+    Log.p('{mode_theme.dart} init');
     _brightness = widget.defaultBrightness;
     _data = widget.themeDataFunction(_brightness);
 
@@ -90,18 +90,18 @@ class ModeThemeState extends State<ModeTheme> {
   void didChangeDependencies() {
     super.didChangeDependencies();
     _data = widget.themeDataFunction(_brightness);
-    Log.t('{mode_theme.dart} didChangeDependencies');
+    Log.p('{mode_theme.dart} didChangeDependencies');
   }
 
   @override
   void didUpdateWidget(ModeTheme oldWidget) {
     super.didUpdateWidget(oldWidget);
-    Log.t('{mode_theme.dart} didUpdateWidget');
+    Log.p('{mode_theme.dart} didUpdateWidget');
     _data = widget.themeDataFunction(_brightness);
   }
 
   Future<void> setBrightness(Brightness brightness) async {
-    Log.t('{mode_theme.dart} setBrightness ${brightness.toString()}');
+    Log.p('{mode_theme.dart} setBrightness ${brightness.toString()}');
     setState(() {
       _data = widget.themeDataFunction(brightness);
       _brightness = brightness;
@@ -111,7 +111,7 @@ class ModeThemeState extends State<ModeTheme> {
   }
 
   Future<void> toggleBrightness() async {
-    Log.t('{mode_theme.dart} toggleBrightness ${_brightness.toString()}');
+    Log.p('{mode_theme.dart} toggleBrightness ${_brightness.toString()}');
     if (_brightness == Brightness.dark)
       await setBrightness(Brightness.light);
     else
@@ -131,7 +131,7 @@ class ModeThemeState extends State<ModeTheme> {
 
   @override
   Widget build(BuildContext context) {
-    Log.t('{mode_theme.dart} build');
+    Log.p('{mode_theme.dart} build');
     return widget.themedWidgetBuilder(context, _data);
   }
 }
