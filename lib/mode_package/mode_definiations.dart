@@ -3,15 +3,21 @@ import 'package:flutter/material.dart';
 import '../mode_theme.dart';
 import 'mode_color.dart';
 
-const Color Gainsboro = const Color(0xffdcdcdc);
-const Color DimGrey = const Color(0xff808080);
-
 class ModeDefiniation {
   static ModeColor buttonModeColor = ModeColor(light: Colors.lightBlue, dark: Colors.deepPurple);
 
   static ModeColor cardColor = ModeColor(light: Colors.lightBlue[400], dark: Colors.black87);
 
   static ModeColor dialogModeColor = ModeColor(light: Gainsboro, dark: Colors.deepPurple);
+
+  /// Color pair when widget (eg a button) is disabled
+  static ModeColor disabledColors = ModeColor(light: Colors.grey, dark: Colors.blueGrey);
+
+  /// Color pair to add brightness to icons to make sure they are visible in light/dark modes
+  static ModeColor iconBrightness = ModeColor(light: Colors.grey, dark: Colors.black45);
+
+  /// Color pair for icon color
+  static ModeColor iconColors = ModeColor(light: Colors.black87, dark: Colors.white70);
 
   /// Color pair for primaryColor in a theme
   static ModeColor primaryModeColor = ModeColor(light: Colors.green, dark: Colors.grey);
@@ -50,13 +56,6 @@ class ModeDefiniation {
 
   static void setCircularProgressIndicator(CircularProgressIndicator indicator) =>
       _circularProgressIndicator = indicator;
-
-  /// Color pair for icon color
-  static ModeColor iconColors = ModeColor(light: Colors.black87, dark: Colors.white70);
-
-  /// Color pair to add brightness to icons to make sure they are visible in light/dark modes
-  ///
-  static ModeColor iconBrightness = ModeColor(light: Colors.grey, dark: Colors.black45);
 
   /// Common background constructor creates Theme data for light and dark modes
   static ThemeData _setter({Brightness brightness}) {
@@ -120,9 +119,6 @@ class ModeDefiniation {
     height: 42.0,
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
   );
-
-  /// Color pair when widget (eg a button) is disabled
-  static ModeColor disabledColors = ModeColor(light: Colors.grey, dark: Colors.blueGrey);
 
   static final TextTheme _kTextThemeWhite = _kTypography.white.copyWith(
     headline1: _kTypography.white.headline1.copyWith(

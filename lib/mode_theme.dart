@@ -6,6 +6,9 @@ export 'mode_package/mode_color.dart';
 export 'mode_package/mode_definiations.dart';
 export 'mode_package/mode_theme.dart';
 
+const Color Gainsboro = const Color(0xffdcdcdc);
+const Color DimGrey = const Color(0xff808080);
+
 enum TextKeys {
   headline1,
   headline2,

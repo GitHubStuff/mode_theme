@@ -26,12 +26,12 @@ class ModeColor {
     return ModeColor(light: color, dark: color, alpha: alpha);
   }
 
-  Color _colorFor({Brightness brightness}) {
-    return (brightness == Brightness.light) ? light : dark;
-  }
-
   Color color(BuildContext context) {
     final brightness = Theme.of(context).brightness;
     return _colorFor(brightness: brightness);
+  }
+
+  Color _colorFor({Brightness brightness}) {
+    return (brightness == Brightness.light) ? light : dark;
   }
 }
